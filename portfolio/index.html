@@ -882,7 +882,7 @@
           <div class="space-y-4">
             <input id="fontInputText" type="text" value="ЗА СВОБОДУ, ПРАВДУ И БУДУЩЕЕ!" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-zinc-200 text-sm focus:outline-none focus:border-pink-500 font-mono placeholder-zinc-500" placeholder="Введите ваш текст для проверки...">
             
-            <div id="fontDisplay" class="font-yabloko text-3xl sm:text-5xl lg:text-6xl text-white font-bold break-words tracking-tight py-6 min-h-[120px] flex items-center transition-all">
+            <div id="fontDisplay" class="font-yabloko text-3xl sm:text-5xl lg:text-6xl text-white font-bold break-words tracking-normal py-6 min-h-[120px] flex items-center transition-all">
               ЗА СВОБОДУ, ПРАВДУ И БУДУЩЕЕ!
             </div>
 
@@ -1791,7 +1791,7 @@
           <div class="space-y-4">
             <input id="techwaveInputText" type="text" value="ВОЛНА ГАРМОНИЯ ДИЗАЙН РЕЗОНАНС" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-zinc-200 text-sm focus:outline-none focus:border-pink-500 font-mono placeholder-zinc-500 uppercase tracking-widest" placeholder="ВВЕДИТЕ ЗАГЛАВНЫЕ КИРИЛЛИЧЕСКИЕ БУКВЫ...">
             
-            <div id="techwaveDisplay" class="font-techwave text-3xl sm:text-5xl lg:text-6xl text-white font-normal break-words tracking-wider py-6 min-h-[120px] flex items-center transition-all uppercase">
+            <div id="techwaveDisplay" class="font-techwave text-3xl sm:text-5xl lg:text-6xl text-white font-normal break-words tracking-normal py-6 min-h-[120px] flex items-center transition-all uppercase">
               ВОЛНА ГАРМОНИЯ ДИЗАЙН РЕЗОНАНС
             </div>
 
@@ -1801,6 +1801,188 @@
           </div>
         </div>
 
+
+        <!-- TECHWAVE PRESENTATION & ALPHABET SPECIMEN -->
+        <div class="mt-12 space-y-8">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
+            <div>
+              <span class="text-xs font-mono text-pink-400 uppercase tracking-wider">Презентация и анатомия шрифта</span>
+              <h3 class="text-xl sm:text-2xl font-bold font-yabloko text-white">АЛФАВИТНЫЙ СПЕСИМЕН & ГЕОМЕТРИЯ ВОЛНЫ</h3>
+            </div>
+            <div class="flex items-center gap-2">
+              <button class="slider-prev-btn p-2 rounded-full bg-white/5 hover:bg-white/15 text-white transition-colors" data-target="slider-techwave-deck">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+              </button>
+              <button class="slider-next-btn p-2 rounded-full bg-white/5 hover:bg-white/15 text-white transition-colors" data-target="slider-techwave-deck">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Featured Specimen Cards -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <!-- Big Alphabet Specimen -->
+            <div class="lg:col-span-8 rounded-2xl overflow-hidden bg-black/40 border border-white/10 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_02.jpg" data-title="Шрифт «Волна» • Полный спесимен алфавита" data-desc="Каталог символов кириллицы (А–Я), цифр и знаков препинания">
+              <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                <img src="assets/images/techwave/techwave_slide_02.jpg" alt="Полный спесимен алфавита Techwave" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+              </div>
+              <div class="p-4 border-t border-white/5 flex items-center justify-between">
+                <div>
+                  <div class="font-bold text-sm text-white">Полный спесимен алфавита (Кириллица А–Я)</div>
+                  <div class="text-xs text-zinc-400 mt-0.5">Слайд 02 • Знаки, модули и цифры</div>
+                </div>
+                <span class="text-xs font-mono text-pink-400">Кликните для зума 🔍</span>
+              </div>
+            </div>
+
+            <!-- Side Anatomy Cards -->
+            <div class="lg:col-span-4 flex flex-col gap-6">
+              <div class="rounded-2xl overflow-hidden bg-black/40 border border-white/10 pink-border-glow transition-all cursor-pointer zoom-trigger group flex-1" data-img="assets/images/techwave/techwave_slide_05.jpg" data-title="Шрифт «Волна» • Логика синусоиды" data-desc="Позиционная синусоида и фазовый сдвиг буквенных модулей">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_05.jpg" alt="Логика синусоиды Techwave" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white">Логика синусоиды & фаза волны</div>
+                  <div class="text-[11px] text-zinc-400">Слайд 05 • Непрерывное волновое движение</div>
+                </div>
+              </div>
+
+              <div class="rounded-2xl overflow-hidden bg-black/40 border border-white/10 pink-border-glow transition-all cursor-pointer zoom-trigger group flex-1" data-img="assets/images/techwave/techwave_slide_06.jpg" data-title="Шрифт «Волна» • Адаптивная морфология" data-desc="Различная форма одного и того же знака в зависимости от места в слове">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_06.jpg" alt="Адаптивная морфология Techwave" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white">Адаптивная морфология знаков</div>
+                  <div class="text-[11px] text-zinc-400">Слайд 06 • OpenType контекстные замены</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 13 Slides Deck Slider -->
+          <div>
+            <div class="text-xs font-mono text-zinc-400 uppercase tracking-wider mb-3">Полная презентация шрифта (13 слайдов • свайп или клик):</div>
+            <div id="slider-techwave-deck" class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-thin">
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_01.jpg" data-title="Шрифт «Волна» (Слайд 01)" data-desc="Обложка шрифтового проекта «Волна»">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_01.jpg" alt="Techwave Слайд 01" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 01</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Обложка шрифтового проекта «Волна»</div>
+                </div>
+              </div>
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_02.jpg" data-title="Шрифт «Волна» (Слайд 02)" data-desc="Полный набор кириллического алфавита и цифр">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_02.jpg" alt="Techwave Слайд 02" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 02</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Полный набор кириллического алфавита и цифр</div>
+                </div>
+              </div>
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_03.jpg" data-title="Шрифт «Волна» (Слайд 03)" data-desc="Модульная сетка и гармонические пропорции">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_03.jpg" alt="Techwave Слайд 03" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 03</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Модульная сетка и гармонические пропорции</div>
+                </div>
+              </div>
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_04.jpg" data-title="Шрифт «Волна» (Слайд 04)" data-desc="Конструктивная схема фазового сдвига">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_04.jpg" alt="Techwave Слайд 04" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 04</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Конструктивная схема фазового сдвига</div>
+                </div>
+              </div>
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_05.jpg" data-title="Шрифт «Волна» (Слайд 05)" data-desc="Математическая модель непрерывной синусоиды">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_05.jpg" alt="Techwave Слайд 05" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 05</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Математическая модель непрерывной синусоиды</div>
+                </div>
+              </div>
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_06.jpg" data-title="Шрифт «Волна» (Слайд 06)" data-desc="Контекстные вариации букв в FontLab">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_06.jpg" alt="Techwave Слайд 06" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 06</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Контекстные вариации букв в FontLab</div>
+                </div>
+              </div>
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_07.jpg" data-title="Шрифт «Волна» (Слайд 07)" data-desc="Оптическая компенсация толщин штрихов">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_07.jpg" alt="Techwave Слайд 07" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 07</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Оптическая компенсация толщин штрихов</div>
+                </div>
+              </div>
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_08.jpg" data-title="Шрифт «Волна» (Слайд 08)" data-desc="Спесимен набора в акцидентных заголовках">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_08.jpg" alt="Techwave Слайд 08" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 08</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Спесимен набора в акцидентных заголовках</div>
+                </div>
+              </div>
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_09.jpg" data-title="Шрифт «Волна» (Слайд 09)" data-desc="Сравнение начертаний и динамики строки">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_09.jpg" alt="Techwave Слайд 09" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 09</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Сравнение начертаний и динамики строки</div>
+                </div>
+              </div>
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_10.jpg" data-title="Шрифт «Волна» (Слайд 10)" data-desc="Афишный плакат с применением шрифта Techwave">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_10.jpg" alt="Techwave Слайд 10" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 10</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Афишный плакат с применением шрифта Techwave</div>
+                </div>
+              </div>
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_11.jpg" data-title="Шрифт «Волна» (Слайд 11)" data-desc="Плакат: визуальный ритм и волновой паттерн">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_11.jpg" alt="Techwave Слайд 11" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 11</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Плакат: визуальный ритм и волновой паттерн</div>
+                </div>
+              </div>
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_12.jpg" data-title="Шрифт «Волна» (Слайд 12)" data-desc="Экспериментальная плакатная графика">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_12.jpg" alt="Techwave Слайд 12" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 12</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Экспериментальная плакатная графика</div>
+                </div>
+              </div>
+              <div class="min-w-[280px] sm:min-w-[340px] snap-start rounded-2xl overflow-hidden bg-black/40 border border-white/5 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/techwave/techwave_slide_13.jpg" data-title="Шрифт «Волна» (Слайд 13)" data-desc="Итоговый плакат проекта «Волна»">
+                <div class="aspect-[16/10] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/techwave/techwave_slide_13.jpg" alt="Techwave Слайд 13" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-3 border-t border-white/5">
+                  <div class="font-bold text-xs text-white truncate">Слайд 13</div>
+                  <div class="text-[11px] text-zinc-400 mt-0.5 truncate">Итоговый плакат проекта «Волна»</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -3633,6 +3815,88 @@
           </div>
         </div>
 
+
+        <!-- 8D: ZHABKA — INDIE GAME FOR STEAM (GODOT & STEAMWORKS ASSETS) -->
+        <div class="mt-16 pt-12 border-t border-white/10">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+            <div>
+              <div class="inline-flex items-center gap-2 text-pink-400 font-mono text-xs uppercase tracking-wider mb-1">
+                <span>🐸</span>
+                <span>Инди-игра в Godot • Полный брендинг для Steam</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-black font-yabloko text-white">
+                «ЖАБКА» (ZHABKA) — STEAM ASSETS & GAME DESIGN
+              </h3>
+              <p class="text-xs sm:text-sm text-zinc-400 max-w-2xl mt-1">
+                Разработка и оформление инди-игры в Godot Engine: создание полного комплекта маркетинговых капсул Valve Steamworks, оформления библиотеки Steam, пиксель-арта, иконок и оформления страницы магазина.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 text-xs font-mono text-zinc-400">
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10">Godot Engine</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10">Steamworks Assets</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10">Pixel Art & UI</span>
+            </div>
+          </div>
+
+          <!-- Hero & Grid for Zhabka -->
+          <div class="space-y-6">
+            <!-- Wide Steam Library Hero -->
+            <div class="rounded-3xl overflow-hidden bg-black/60 border border-white/10 pink-border-glow transition-all cursor-pointer zoom-trigger group relative" data-img="assets/images/zhabka/zhabka_library_hero.jpg" data-title="ЖАБКА • Steam Library Hero (1920×620)" data-desc="Главный широкий баннер игры в библиотеке Steam">
+              <div class="aspect-[1920/620] overflow-hidden bg-black/80 flex items-center justify-center">
+                <img src="assets/images/zhabka/zhabka_library_hero.jpg" alt="ЖАБКА Steam Hero" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+              </div>
+              <div class="absolute bottom-4 right-4 px-3 py-1.5 rounded-full bg-black/70 backdrop-blur border border-white/10 text-xs font-mono text-pink-300">
+                Steam Library Hero 1920×620
+              </div>
+            </div>
+
+            <!-- 3 Capsules Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Vertical Library Poster -->
+              <div class="rounded-2xl overflow-hidden bg-black/40 border border-white/10 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/zhabka/zhabka_vertical_poster.png" data-title="ЖАБКА • Вертикальная обложка (600×900)" data-desc="Постер игры для библиотеки Steam">
+                <div class="aspect-[2/3] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/zhabka/zhabka_vertical_poster.png" alt="ЖАБКА Vertical Poster" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-4 border-t border-white/5">
+                  <div class="font-bold text-sm text-white">Вертикальный постер 600×900</div>
+                  <div class="text-xs text-zinc-400 mt-1">Сетка библиотеки Steam</div>
+                </div>
+              </div>
+
+              <!-- Main Capsule -->
+              <div class="rounded-2xl overflow-hidden bg-black/40 border border-white/10 pink-border-glow transition-all cursor-pointer zoom-trigger group" data-img="assets/images/zhabka/zhabka_main_capsule.png" data-title="ЖАБКА • Главная капсула (616×353)" data-desc="Баннер карусели рекомендаций Steam">
+                <div class="aspect-[616/353] overflow-hidden bg-black/60 flex items-center justify-center">
+                  <img src="assets/images/zhabka/zhabka_main_capsule.png" alt="ЖАБКА Main Capsule" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="p-4 border-t border-white/5">
+                  <div class="font-bold text-sm text-white">Главная капсула 616×353</div>
+                  <div class="text-xs text-zinc-400 mt-1">Витрина магазина Steamworks</div>
+                </div>
+              </div>
+
+              <!-- Header Capsule & Wishlist -->
+              <div class="flex flex-col gap-6">
+                <div class="rounded-2xl overflow-hidden bg-black/40 border border-white/10 pink-border-glow transition-all cursor-pointer zoom-trigger group flex-1" data-img="assets/images/zhabka/zhabka_header_capsule.png" data-title="ЖАБКА • Шапка магазина (460×215)" data-desc="Шапка страницы игры и списки распродаж">
+                  <div class="aspect-[460/215] overflow-hidden bg-black/60 flex items-center justify-center">
+                    <img src="assets/images/zhabka/zhabka_header_capsule.png" alt="ЖАБКА Header Capsule" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                  </div>
+                  <div class="p-3 border-t border-white/5">
+                    <div class="font-bold text-xs text-white">Шапка магазина 460×215</div>
+                  </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden bg-black/40 border border-white/10 pink-border-glow transition-all cursor-pointer zoom-trigger group flex-1" data-img="assets/images/zhabka/zhabka_wishlist_banner.png" data-title="ЖАБКА • Баннер вишлиста (616×180)" data-desc="Графический призыв добавить в список желаемого">
+                  <div class="aspect-[616/180] overflow-hidden bg-black/60 flex items-center justify-center">
+                    <img src="assets/images/zhabka/zhabka_wishlist_banner.png" alt="ЖАБКА Wishlist Banner" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                  </div>
+                  <div class="p-3 border-t border-white/5">
+                    <div class="font-bold text-xs text-white">Баннер вишлиста (Wishlist)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -5808,6 +6072,24 @@
           </div>
         </div>
 
+
+        <!-- VP-NET CYPHER PROTOCOL (AI AGENT & PWA) -->
+        <div class="mt-8 p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-emerald-950/30 via-dark-900 to-black border border-emerald-500/30 flex flex-col lg:flex-row items-center justify-between gap-8 pink-border-glow">
+          <div class="space-y-4 max-w-2xl text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 text-emerald-400 font-mono text-xs uppercase tracking-widest">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>PWA • Vanilla JS • AI Prompt Engineering • GPS Geofencing</span>
+            </div>
+            <h3 class="font-yabloko text-3xl sm:text-4xl font-black text-white">VP-NET // ПРОТОКОЛ CYPHER</h3>
+            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+              Интерактивный киберпанк PWA-интерфейс персонального AI-брокера Сайфера (Амир Эль-Амари). Проект включает Service Worker, работу в оффлайне, симуляцию биометрии, отслеживание геопозиции (геофенсинг рабочих зон и базы) и проработанный System Prompt для ролевого поведения нейросети.
+            </p>
+          </div>
+          <a href="https://github.com/Dktlin/vp-net" target="_blank" class="px-8 py-4 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm tracking-wider flex items-center gap-3 transition-transform hover:scale-105 active:scale-95 shrink-0 shadow-lg shadow-emerald-900/40">
+            <span>ОТКРЫТЬ РЕПОЗИТОРИЙ НА GITHUB</span>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -5875,6 +6157,43 @@
           </div>
         </div>
 
+
+        <!-- EDUCATION & CREDENTIALS -->
+        <div class="mt-16 pt-12 border-t border-white/5">
+          <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="text-pink-400 font-mono text-xs uppercase tracking-widest">Академический бэкграунд</span>
+            <h3 class="text-2xl sm:text-3xl font-black font-yabloko tracking-tight mt-1">ОБРАЗОВАНИЕ & КВАЛИФИКАЦИЯ</h3>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Bachelor Degree -->
+            <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-pink-500/40 transition-all pink-border-glow">
+              <div class="text-xs font-mono text-pink-400 uppercase tracking-wider mb-2">Высшее образование • 2024</div>
+              <h4 class="font-yabloko font-bold text-lg text-white mb-2">НИУ ВШЭ '24 • Бакалавриат</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">
+                Школа дизайна, Факультет креативных индустрий. Направление «Дизайн». Академическая база по типографике, геймдизайну, многостраничной верстке и брендингу.
+              </p>
+            </div>
+
+            <!-- EdTech Researcher -->
+            <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-pink-500/40 transition-all pink-border-glow">
+              <div class="text-xs font-mono text-pink-400 uppercase tracking-wider mb-2">Повышение квалификации • 570 ч</div>
+              <h4 class="font-yabloko font-bold text-lg text-white mb-2">Исследователь в EdTech</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">
+                Удостоверение НИУ ВШЭ № 01.80-65/24-00272. Программа расширения профессиональных компетенций в сфере образовательных технологий, педагогического дизайна и исследований.
+              </p>
+            </div>
+
+            <!-- Academic English -->
+            <div class="p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-pink-500/40 transition-all pink-border-glow">
+              <div class="text-xs font-mono text-pink-400 uppercase tracking-wider mb-2">Сертификация • 2025</div>
+              <h4 class="font-yabloko font-bold text-lg text-white mb-2">Академический английский</h4>
+              <p class="text-xs text-zinc-400 leading-relaxed">
+                Удостоверение НИУ ВШЭ № 01.80-65/25-01255. Независимый экзамен НИУ ВШЭ: подтвержденный уровень профессионального владения английским языком для академической коммуникации.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
