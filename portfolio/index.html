@@ -6880,6 +6880,68 @@
         if (e.key === 'ArrowRight') openModalAtIndex(currentModalIndex + 1);
       }
     });
+
+    // --- 8. SMART SLIDER PRELOADER & BACKGROUND CACHE PIPELINE ---
+    // Solves horizontal scroll lag & lazy-loading quirks on mobile Safari:
+    // 1. As soon as a carousel gets within 600px of viewport, eagerly prefetch all its slides.
+    // 2. On first touch/hover on any slider, immediately fetch all its slides.
+    // 3. After the main page is loaded and idle for 1.5s, quietly prefetch remaining slides in sequence.
+    function preloadSliderImages(slider) {
+      if (!slider || slider.dataset.preloaded === 'true') return;
+      slider.dataset.preloaded = 'true';
+      const imgs = slider.querySelectorAll('img');
+      imgs.forEach(img => {
+        if (img.loading === 'lazy') {
+          img.loading = 'eager';
+        }
+        const src = img.currentSrc || img.getAttribute('src');
+        if (src) {
+          const pre = new Image();
+          pre.src = src;
+        }
+      });
+    }
+
+    if ('IntersectionObserver' in window) {
+      const sliderObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            preloadSliderImages(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '600px 0px 600px 0px' });
+
+      document.querySelectorAll('.overflow-x-auto, [id^="slider-"]').forEach(slider => {
+        sliderObserver.observe(slider);
+        slider.addEventListener('pointerenter', () => preloadSliderImages(slider), { once: true });
+        slider.addEventListener('touchstart', () => preloadSliderImages(slider), { once: true, passive: true });
+      });
+    }
+
+    // Background idle prefetch for remaining images
+    window.addEventListener('load', () => {
+      const remainingLazy = Array.from(document.querySelectorAll('img[loading="lazy"]'));
+      let idx = 0;
+      function idleFetch() {
+        if (idx >= remainingLazy.length) return;
+        const batch = remainingLazy.slice(idx, idx + 4);
+        idx += 4;
+        batch.forEach(img => {
+          const src = img.getAttribute('src');
+          if (src) {
+            const pre = new Image();
+            pre.src = src;
+          }
+        });
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(idleFetch, { timeout: 2000 });
+        } else {
+          setTimeout(idleFetch, 300);
+        }
+      }
+      setTimeout(idleFetch, 1500);
+    });
   </script>
 </body>
 </html>
